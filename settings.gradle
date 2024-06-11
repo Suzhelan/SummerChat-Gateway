@@ -1,0 +1,4 @@
+rootProject.name = 'SummerChat-Gateway'
+include 'core'
+include 'config'
+

@@ -1,0 +1,33 @@
+server:
+  port: 8080
+
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator: #开启从注册中心动态创建路由的功能，利用微服务名进行路由
+          enabled: true
+          #开启小写验证，默认feign根据服务名查找都是用的全大写
+          lowerCaseServiceId: true
+
+    nacos:
+      #username
+      #      username: nacos
+      #password
+      #      password: nacos
+      discovery:
+        #集群名称
+        cluster-name: HK
+        #id:端口号
+        server-addr: 192.168.6.118:8848
+        #命名空间
+        namespace: ac25a04d-7bff-4f89-805e-e7cfe173a33a
+      config:
+        #集群名称
+        cluster-name: HK
+        #id:端口号
+        server-addr: 192.168.6.118:8848
+        #命名空间
+        namespace: ac25a04d-7bff-4f89-805e-e7cfe173a33a
+        #配置文件格式
+        file-extension: json
