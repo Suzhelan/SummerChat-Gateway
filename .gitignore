@@ -38,3 +38,4 @@ out/
 
 # 不上传生产环境配置文件到github path:core/src/main/resources/*-prod.yaml ###
 *-prod.*
+.logs/

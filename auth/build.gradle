@@ -1,12 +1,15 @@
 plugins {
-
+    id 'java'
 }
 
+group = 'top.ocsc.summerchat.gateway.auth'
+version = 'unspecified'
+
+repositories {
+    mavenCentral()
+}
 
 dependencies {
-    implementation project(':auth')
-    implementation project(':config')
-    implementation project(':filter')
 
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'

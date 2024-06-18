@@ -31,4 +31,5 @@ public class GatewayConfigServiceConfig {
         properties.setProperty(PropertyKeyConst.CLUSTER_NAME, nacosConfigProperties.getClusterName());
         return NacosFactory.createConfigService(properties);
     }
+
 }
