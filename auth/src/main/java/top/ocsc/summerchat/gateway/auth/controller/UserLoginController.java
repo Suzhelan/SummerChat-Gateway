@@ -17,7 +17,7 @@ public class UserLoginController {
 
     private static final Logger log = LogManager.getLogger(UserLoginController.class);
     @Autowired
-    public  UserLoginService userLoginService;
+    public UserLoginService userLoginService;
 
     @RequestMapping("doLogin")
     public Object doLogin() throws ExecutionException, InterruptedException, TimeoutException {
